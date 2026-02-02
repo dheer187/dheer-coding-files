@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excel Data Copier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Excel Data Copier</h1>
+    <form id="fileForm">
+      <label for="excelFile">Upload Excel file:</label>
+      <input type="file" id="excelFile" accept=".xlsx, .xlsm" required>
+      <br><br>
+      <label for="textBox">Enter text data to save in text box:</label>
+      <textarea id="textBox" placeholder="Type your text here..." required></textarea>
+      <br><br>
+      <button type="button" id="processButton">Process Data</button>
+    </form>
+    <a id="downloadExcel1" style="display:none;" download="output1.xlsx">Download Excel File 1</a>
+    <br><br>
+    <a id="downloadExcel2" style="display:none;" download="output2.xlsx">Download Excel File 2</a>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.19.2/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
